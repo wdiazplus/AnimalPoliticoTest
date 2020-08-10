@@ -1,0 +1,148 @@
+/* Imports include Fonts and url */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+
+
+/* Define variables */
+
+:root {
+   
+    /* Colors */
+    --black: #000000;
+    --black_alternative: #191919;
+    --red: #D34549;
+    --beige: #E6EBE0;
+    --aqua: #5CA4A9;
+    --black_background: #1D1C1C;
+    --yellow: #F4F1BB;
+    --animal: #FE0435;
+    --gray: #9BC1BC;
+     /* Images */
+    --width-icon: auto;
+    --height-icon:33px;
+     /* Fonts */
+    --titles:'Open Sans', sans-serif;
+    --text:'Roboto',  sans-serif;
+ }
+
+
+/* ------------------------  General styles  --------------------- */
+
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    background-color: var(--black_background);
+}
+
+h1, h3{
+    color: white;
+}
+
+.video , .stats , .fakenews , .utilinformation , .impact , .hero {
+    padding: 0 20px;
+}
+
+/*  --------------------- Header   ---------------------*/
+.header{
+    width: 100%;
+    height: auto;
+    background-color: var(--red);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav{
+    width: auto;
+    height: auto;
+}
+
+.header__nav--ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+}
+.header__nav--ul li{
+    justify-content: space-between;
+    padding-right: 20px;
+    color: white;
+    /* font-size: var(--titles); */
+}
+
+.header__nav img{
+    display: none;
+}
+
+/* --------------------- Hero  ---------------------*/
+
+.hero {
+    display: inline-block;
+    padding: 0 20px;
+    align-items: center;
+    width:415px; 
+    height: 230px;
+}
+
+.hero img{
+    width: auto;
+    height: auto;
+}
+
+/* ---------------------  Social Media ---------------------  */
+
+.socialmedia{
+    display: inline-flex;
+}
+
+/* ---------------------  Video ---------------------  */
+
+
+
+/* ---------------------  Stats ---------------------  */
+
+
+/* ---------------------  Fake news ---------------------  */
+
+
+
+/* ---------------------  Util information ---------------------  */
+
+
+/* ---------------------  Impact ---------------------  */
+
+
+/* ---------------------  Footer ---------------------  */
+
+
+
+/*  -----------------------------------------------------------------    */
+/*  ----------------------   RESPONSIVE DESIGN ----------------------    */
+/*  -----------------------------------------------------------------    */
+/*  -----------------------------------------------------------------    */
+
+
+@media (max-width:800px){
+
+.header{
+    background-color: var(--red) ;
+}
+
+.header__nav{
+    display: none;
+}
+
+.header__figure--logotipo{
+    width: 30px;
+    height: 40px;
+}
+
+}
+
+/* @media (min-width:800px){
+
+    } */
