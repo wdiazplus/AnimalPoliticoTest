@@ -155,6 +155,21 @@ h1, h3{
 
 /* ---------------------  Video ---------------------  */
 
+.video{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding-bottom: 40px;
+}
+
+.video__text{
+    margin: 0;
+    font-family: var(--titles);
+}
 
 
 /* ---------------------  Stats ---------------------  */
@@ -236,6 +251,17 @@ h1, h3{
     .socialmedia img{
         height: 25px;
     }
+
+    .video__text{
+        font-size: 32px;
+        margin: 20px  0;
+    }
+    .video__content{
+        width: auto;
+        height: auto;
+        box-shadow: 5px 2px var(--red);
+    }
+
 } 
 
 
@@ -297,6 +323,17 @@ h1, h3{
     }
     .socialmedia img{
         height: 35px;
+    }
+
+
+    .video__text{
+        font-size: 42px;
+        margin: 20px  0;
+    }
+    .video__content{
+        width: 600px;
+        height: 400px;
+        box-shadow: 5px 2px var(--red);
     }
 
 }
@@ -547,6 +584,16 @@ h1, h3{
     }
     .socialmedia img{
         height: 36px;
+    }
+
+    .video__text{
+        font-size: 50px;
+        margin: 20px  0;
+    }
+    .video__content{
+        width: 1200px;
+        height: 800px;
+        box-shadow: 5px 2px var(--red);
     }
     
     }
