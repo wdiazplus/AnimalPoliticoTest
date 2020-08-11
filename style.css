@@ -146,6 +146,11 @@ h1, h3{
 
 .socialmedia{
     display: inline-flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--red);
 }
 
 /* ---------------------  Video ---------------------  */
@@ -198,6 +203,8 @@ h1, h3{
     .hero{
         width: auto;
         height: auto;
+        padding: 60px 0 20px ;
+        
     }
 
     .hero__img{
@@ -221,6 +228,13 @@ h1, h3{
 
     .hero__button--container{
         padding-top: 50px;
+    }
+
+    .socialmedia{
+        height: 72px;
+    }
+    .socialmedia img{
+        height: 25px;
     }
 } 
 
@@ -267,11 +281,24 @@ h1, h3{
         margin: 0px;
         color: var(--red);
     }
+
+    .hero__button--container h5{
+        font-size: 16px;
+    }
     
 
     .hero__button--container{
         padding-top: 50px;
     }
+
+
+    .socialmedia{
+        height: 120px;
+    }
+    .socialmedia img{
+        height: 35px;
+    }
+
 }
 
 
@@ -308,8 +335,8 @@ h1, h3{
 
     .hero__img{
         width: 480px;
-        height: 300px;
-        padding: 50px 0;
+        height: 280px;
+        padding: 50px 0 70px;
     }
 
     .hero__text{
@@ -329,6 +356,14 @@ h1, h3{
 
     .hero__button--container{
         padding-top: 50px;
+    }
+
+    .socialmedia{
+        margin-top: 20px;
+        height: 100px;
+    }
+    .socialmedia img{
+        height: 35px;
     }
 
 }
@@ -378,7 +413,7 @@ h1, h3{
 .hero__text{
     width: 460px;
     height: 280px;
-    padding-top: 110px;
+    padding: 110px 0;
 
 }
 
@@ -415,6 +450,15 @@ h1, h3{
     padding-top: 50px ;
 }
 
+
+.socialmedia{
+    height: 80px;
+    margin-top: 54px;
+}
+.socialmedia img{
+    height: 28px;
+}
+
 }
 
 
@@ -428,8 +472,13 @@ h1, h3{
         display: flex;
         justify-content: space-around;
         width: 100%;
-        height: 100%;
+        height: 150px;
         /* padding: 0 200px; */
+    }
+
+    .header__figure--logotipo img{
+        width: 60px;
+        height: 80px;
     }
 
     .header__nav--list{
@@ -437,8 +486,8 @@ h1, h3{
     }
     .header__nav--list li a{
         font-weight: 500;
-        font-size: 24px;
-        padding-right: 50px;
+        font-size: 30px;
+        padding-right: 40px;
     }
     
     .header__figure--menu{
@@ -453,27 +502,28 @@ h1, h3{
         padding: 50px 0px 0;
         }
     .hero__img{
-        width: auto;
+        width: 900px;
         height: auto;
         padding-top: 70px;
+        padding-bottom: 0;
     }
 
     .hero__text{
-        padding: 50px 100px 0 0;
+        padding: 0 100px 0 0;
     }
 
     .hero__text h1{
         margin: 0;
         color: var(--red);
-        font-size: 60px;
+        font-size: 80px;
     }
 
     .hero__text h3{
-        font-size: 30px;
+        font-size: 40px;
     }
     
     .hero__button--container{
-        padding-top: 30px;
+        padding-top: 60px;
     }
 
 
@@ -489,6 +539,14 @@ h1, h3{
 
     .hero__button--container h5{
         font-size: 30px;
+    }
+
+    .socialmedia{
+        margin-top: 200px;
+        height: 100px;
+    }
+    .socialmedia img{
+        height: 36px;
     }
     
     }
