@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slides.css">
+    <script src="slide.js"></script>
     <link rel="shortcut icon" type="gif" href="Design/gif_menu.gif"/>
     <title>Animal Politico Covid19</title>
 </head>
@@ -52,11 +55,35 @@
         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
         picture-in-picture" allowfullscreen></iframe>
     </section>
-    <!-- <section id="stats" class="stats">
+    <section id="stats" class="stats">
         <h1>ESTADÍSTICAS</h1>
-        <div>Here Stats</div>
+        <div id="slider-container">
+            <div id="slide-0" class="slide fade">
+              <img src="images/img0.jpg" alt="Img 0">
+            </div>
+            <div id="slide-1" class="slide fade">
+              <img src="images/img1.jpg" alt="Img 1">
+            </div>
+            <div id="slide-2" class="slide fade">
+              <img src="images/img2.jpg" alt="Img 2">
+            </div>
+            <div id="arrows-wrapper">
+              <p id="arrow-prev" class="slider-arrow center_y">
+                &#10094;
+              </p>
+              <p id="arrow-next" class="slider-arrow center_y">
+                &#10095;
+              </p>
+            </div>
+            <div id="dots-wrapper" class="center_x">
+              <div class="dot-nav"></div>
+              <div class="dot-nav"></div>
+              <div class="dot-nav"></div>
+            </div>
+          </div>
+        
     </section>
-    <section id="fake" class="fakenews">
+    <!-- <section id="fake" class="fakenews">
         <h1>NOTICIAS FALSAS</h1>
         <div>Here fake_news</div>
     </section>

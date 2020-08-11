@@ -173,7 +173,16 @@ h1, h3{
 
 
 /* ---------------------  Stats ---------------------  */
+.stats{
+    width: auto;
+    height: auto;
+}
 
+
+.stats h1{
+    font-family: var(--titles);
+    font-size: 32px;
+}
 
 /* ---------------------  Fake news ---------------------  */
 
