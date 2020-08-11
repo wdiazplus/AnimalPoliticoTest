@@ -177,7 +177,7 @@ h1, h3{
 /*  ------------------------- Menores a un iphone 6/7/8 Plus           -------------------------------    */
 
 
-@media (max-width:350px){
+@media (max-width:350px){ 
     .header{
         width: 100%;
         height: auto;
@@ -185,6 +185,14 @@ h1, h3{
         justify-content:space-between;
     }
 
+    .header__nav{
+        display: none;
+    }
+
+    .header__figure--logotipo img{
+        width: 40px;
+        height: 50px;
+    }
 
     .hero{
         width: auto;
@@ -212,7 +220,7 @@ h1, h3{
     .hero__button--container{
         padding-top: 50px;
     }
-}
+} 
 
 
 /*  ------------------------- Principalmente para iphone 6/7/8 Plus           -------------------------------    */
@@ -225,6 +233,14 @@ h1, h3{
         justify-content:space-between;
     }
 
+    .header__nav{
+        display: none;
+    }
+
+    .header__figure--logotipo img{
+        width: 40px;
+        height: 50px;
+    }
 
     .hero{
         width: auto;
