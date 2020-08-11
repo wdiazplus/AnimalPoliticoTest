@@ -176,12 +176,22 @@ h1, h3{
 .stats{
     width: auto;
     height: auto;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
 }
 
 
 .stats h1{
     font-family: var(--titles);
     font-size: 32px;
+    padding: 20px;
+}
+.stats__container{
+    display: block;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* ---------------------  Fake news ---------------------  */
