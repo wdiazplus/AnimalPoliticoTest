@@ -87,12 +87,14 @@ h1, h3{
     list-style: none;
     display: inline-flex;
     align-items: center;
+    
 }
-.header__nav--list li{
+.header__nav--list li a{
     justify-content: space-between;
     padding-right: 20px;
     color: white;
-    /* font-size: var(--titles); */
+    text-decoration: none;
+    font-size: var(--titles); 
 }
 
 .header__nav img{
@@ -104,7 +106,7 @@ h1, h3{
 .hero {
     display: grid;
     grid-templete-columns: repeat(2,1fr);
-    padding: 60px 20px;
+    padding: 60px 0px;
     width:auto; 
     height: auto;
     justify-items: center;
@@ -121,7 +123,7 @@ h1, h3{
     padding: 50px 0 ;
 
 }
-.hero__button{
+.hero__button--container a{
     width: 170px;
     height: 40px;
     border-radius: 8px;
@@ -131,11 +133,9 @@ h1, h3{
     align-items: center;
     background-color: white;
     text-decoration: none;
-    
-
 }
 
-.hero__button img{
+.hero__button--container img{
     width: 36px;
     height: 36px;
     padding-bottom: 5px;
@@ -174,40 +174,264 @@ h1, h3{
 /*  -----------------------------------------------------------------    */
 
 
+/*  ------------------------- Menores a un iphone 6/7/8 Plus           -------------------------------    */
 
-@media (max-width:899px){
+
+@media (max-width:350px){
+    .header{
+        width: 100%;
+        height: auto;
+        display: inline-flex;
+        justify-content:space-between;
+    }
+
+
+    .hero{
+        width: auto;
+        height: auto;
+    }
+
+    .hero__img{
+        width: 250px;
+        height: 120px;
+        padding: 20px 0;
+    }
+
+    .hero__text{
+        padding-top: 0;
+    }
+
+    .hero__text h3{
+        margin: 5px
+    }
+    .hero__text h1{
+        margin: 0px
+    }
+    
+
+    .hero__button--container{
+        padding-top: 50px;
+    }
+}
+
+
+/*  ------------------------- Principalmente para iphone 6/7/8 Plus           -------------------------------    */
+
+@media (min-width:351px) and (max-width:450px){
+    .header{
+        width: 100%;
+        height: auto;
+        display: inline-flex;
+        justify-content:space-between;
+    }
+
+
+    .hero{
+        width: auto;
+        height: auto;
+
+    }
+
+    .hero__img{
+        /* width: 250px;
+        height: 120px; */
+        padding: 0;
+    }
+
+    .hero__text{
+        padding: 30px 0;
+    }
+
+    .hero__text h3{
+        margin: 0;
+    }
+    .hero__text h1{
+        margin: 0px;
+        color: var(--red);
+    }
+    
+
+    .hero__button--container{
+        padding-top: 50px;
+    }
+}
+
+
+/*  ------------------------- Para Ipad y similares           -------------------------------    */
+
+@media (min-width:451px) and (max-width:899px){
+
+    .header{
+        width: 100%;
+        height: 120px;
+        display: inline-flex;
+        justify-content:space-between;
+    }
+
+    .header__figure--logotipo img{
+        width: 40px;
+        height: 50px;
+    }
+
+    .header__figure--menu img{
+        width: 48px;
+        height: 30px;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .hero{
+        width: auto;
+        height: auto;
+
+    }
+
+    .hero__img{
+        width: 475px;
+        height: 267px; 
+        padding: 50px 0;
+    }
+
+    .hero__text{
+        padding: 30px 0;
+    }
+
+    .hero__text h3{
+        margin: 5px;
+        font-size: 20px;
+    }
+    .hero__text h1{
+        margin: 0px;
+        color: var(--red);
+        font-size: 60px;
+    }
+    
+
+    .hero__button--container{
+        padding-top: 50px;
+    }
+
+}
+
+
+/*  ------------------------- Web pequeña           -------------------------------    */
+
+
+@media (min-width:900px) and (max-width:1290px){
 
 .header{
-    padding: 0px 20px;
+    width: 100%;
+    height: 100%;
 }
 
-.header__nav{
-    display: none;
+.header__nav--list{
+    padding: 20px;
 }
-
-.header__figure--logotipo img{
-    width: 30px;
-    height: 40px;
+.header__nav--list li a{
+    font-weight: 500;
+    font-size: 18px;
 }
-
-}
-
- @media (min-width:900px){
-
-.header{
-    width: auto;
-    height: 180px;
-    justify-content: space-between;
-    padding: 0 50px;
-}
-
-/* .header__nav{
-    display: flex;
-} */
-
 
 .header__figure--menu{
     display: none;
 }
 
-    } 
+.hero{
+    display: inline-flex;
+    align-items: flex-end;
+    width:100%;
+    justify-content: space-around;
+    padding: 50px 100px 0 0;
+    }
+
+.hero__text h1{
+    margin: 0;
+    color: var(--red);
+}
+
+.hero__button--container{
+    padding: 30px 0 0 0;
+}
+.hero__img{
+    padding-bottom: 60px;
+}
+
+}
+
+
+/*  ------------------------- Web grande        -------------------------------    */
+
+
+@media (min-width:1291px) {
+
+
+    .header{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        /* padding: 0 200px; */
+    }
+
+    .header__nav--list{
+        padding: 40px;
+    }
+    .header__nav--list li a{
+        font-weight: 500;
+        font-size: 24px;
+        padding-right: 50px;
+    }
+    
+    .header__figure--menu{
+        display: none;
+    }
+    
+    .hero{
+        display: inline-flex;
+        align-items: flex-end;
+        width:100%;
+        justify-content: space-around;
+        padding: 50px 100px 0 0;
+        }
+    .hero__img{
+        width: auto;
+        height: auto;
+        padding-top: 70px;
+    }
+
+    .hero__text{
+        padding: 50px 100px 0 0;
+    }
+
+    .hero__text h1{
+        margin: 0;
+        color: var(--red);
+        font-size: 60px;
+    }
+
+    .hero__text h3{
+        font-size: 30px;
+    }
+    
+    .hero__button--container{
+        padding-top: 30px;
+    }
+
+
+    .hero__button--container a{
+;
+        width: 350px;
+        height: 80px;
+    }
+    .hero__button--container img{
+        width: auto;
+        height: auto;
+    }
+
+    .hero__button--container h5{
+        font-size: 30px;
+    }
+    
+    }
