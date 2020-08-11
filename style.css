@@ -87,6 +87,7 @@ h1, h3{
     list-style: none;
     display: inline-flex;
     align-items: center;
+    font-family: var(--titles);
     
 }
 .header__nav--list li a{
@@ -174,10 +175,10 @@ h1, h3{
 /*  -----------------------------------------------------------------    */
 
 
-/*  ------------------------- Menores a un iphone 6/7/8 Plus           -------------------------------    */
+/*  -------------------------Principalmente para iphone 6/7/8 Plus          -------------------------------    */
 
 
-@media (max-width:350px){ 
+@media (min-width:350px){ 
     .header{
         width: 100%;
         height: auto;
@@ -200,8 +201,8 @@ h1, h3{
     }
 
     .hero__img{
-        width: 250px;
-        height: 120px;
+        width: 320px;
+        height: 180px;
         padding: 20px 0;
     }
 
@@ -213,7 +214,8 @@ h1, h3{
         margin: 5px
     }
     .hero__text h1{
-        margin: 0px
+        margin: 0px;
+        color: var(--red)
     }
     
 
@@ -223,9 +225,9 @@ h1, h3{
 } 
 
 
-/*  ------------------------- Principalmente para iphone 6/7/8 Plus           -------------------------------    */
+/*  ------------------------- Entre iphone 6/7/8 Plus e Ipad    -------------------------------    */
 
-@media (min-width:351px) and (max-width:450px){
+@media (min-width: 544px){
     .header{
         width: 100%;
         height: auto;
@@ -249,9 +251,9 @@ h1, h3{
     }
 
     .hero__img{
-        /* width: 250px;
-        height: 120px; */
-        padding: 0;
+        width: 340px;
+        height: 180px;
+        padding-bottom: 30px;
     }
 
     .hero__text{
@@ -275,7 +277,7 @@ h1, h3{
 
 /*  ------------------------- Para Ipad y similares           -------------------------------    */
 
-@media (min-width:451px) and (max-width:899px){
+@media (min-width:768px){
 
     .header{
         width: 100%;
@@ -305,8 +307,8 @@ h1, h3{
     }
 
     .hero__img{
-        width: 475px;
-        height: 267px; 
+        width: 480px;
+        height: 300px;
         padding: 50px 0;
     }
 
@@ -335,19 +337,29 @@ h1, h3{
 /*  ------------------------- Web pequeña           -------------------------------    */
 
 
-@media (min-width:900px) and (max-width:1290px){
+@media (min-width: 1000px){
 
 .header{
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    /* padding: 0 100px; */
 }
 
+.header__nav{
+    display: inline-flex;
+    justify-content: center;
+    /* padding-right: 50px; */
+}
+
+
 .header__nav--list{
-    padding: 20px;
+    padding: 10px;
 }
 .header__nav--list li a{
-    font-weight: 500;
-    font-size: 18px;
+    padding: 0 25px 0 0;
 }
 
 .header__figure--menu{
@@ -356,22 +368,51 @@ h1, h3{
 
 .hero{
     display: inline-flex;
-    align-items: flex-end;
+    align-items: center;
     width:100%;
     justify-content: space-around;
-    padding: 50px 100px 0 0;
+    /* margin-right: 300px; */
+    /* margin-left: 100px; */
     }
+
+.hero__text{
+    width: 460px;
+    height: 280px;
+    padding-top: 110px;
+
+}
 
 .hero__text h1{
     margin: 0;
     color: var(--red);
 }
 
-.hero__button--container{
-    padding: 30px 0 0 0;
+.hero__text h3{
+    font-size: 35px;
 }
+
+.hero__button--container{
+    padding: 50px 0 0 0;
+}
+.hero__button--container a{
+    width: 250px;
+    height: 60px;
+}
+
+
+.hero__button--container img{
+    width: 60px;
+    height: 60px;
+}
+
+.hero__button--container h5{
+    font-size: 20px;
+}
+
 .hero__img{
-    padding-bottom: 60px;
+    width: 460px;
+    height: 280px;
+    padding-top: 50px ;
 }
 
 }
@@ -380,7 +421,7 @@ h1, h3{
 /*  ------------------------- Web grande        -------------------------------    */
 
 
-@media (min-width:1291px) {
+@media (min-width:1290px) {
 
 
     .header{
@@ -406,10 +447,10 @@ h1, h3{
     
     .hero{
         display: inline-flex;
-        align-items: flex-end;
+        align-items: center;
         width:100%;
         justify-content: space-around;
-        padding: 50px 100px 0 0;
+        padding: 50px 0px 0;
         }
     .hero__img{
         width: auto;
